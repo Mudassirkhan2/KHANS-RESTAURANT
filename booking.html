@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Booking | Khan's Restaurant</title>
-   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="globalStyle.css">
   <link rel="stylesheet" href="components.css">
-  <!-- ANIMATE ON SCROLL (AOS) LINK -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 </head>
 
@@ -25,13 +24,15 @@
         </a>
         <nav>
           <div class="nav__icon">
-            <i class='bx bx-menu'></i>
+<!--             <i class='bx bx-menu'></i> -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
           </div>
           <div class="nav__bgoverlay ">
           </div>
           <ul class="nav__list ">
             <div class="nav__close">
-              <i class='bx bx-x'></i>
+<!--               <i class='bx bx-x'></i> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
             </div>
             <div class="nav__list__wrapper">
               <li><a href="index.html" class="nav__link">Home</a></li>
@@ -47,13 +48,13 @@
     </div>
   </div>
   <!--   end of nav section -->
-<!--   booking section -->
-<!--   end of booking section -->
- <section id="form">
-   <div class="container">
-     <h3 class="form__title">Book Table</h3>
-     <div class="form__wrapper">
-       <form >
+  <!--   booking section -->
+  <!--   end of booking section -->
+  <section id="form">
+    <div class="container">
+      <h3 class="form__title">Book Table</h3>
+      <div class="form__wrapper">
+        <form name="booking form" netlify>
           <div class="form__group">
             <label for="firstname">First Name</label>
             <input type="text" id="firstname" name="firstname" required>
@@ -87,26 +88,26 @@
               <option value="indoor">Indoor</option>
               <option value="rooftop">Rooftop</option>
             </select>
-          </div> 
-           <div class="form__group">
-             <label for="date">Date</label>
-             <input type="date"id="date"name="date" required>
-           </div>
-           <div class="form__group">
-             <label for="time">Time</label>
-             <input type="time"id="time"name="time" required>
-           </div>
-            <div class="form__group form__group__full">
+          </div>
+          <div class="form__group">
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form__group">
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+          </div>
+          <div class="form__group form__group__full">
             <label for="note">Note</label>
-            <textarea name="note" id="note"  rows="5"> 
+            <textarea name="note" id="note" rows="5">
               </textarea>
           </div>
           <button type="submit" class="btn primary-btn">Book Table</button>
-         
-       </form>
-     </div>
-   </div>
- </section>
+
+        </form>
+      </div>
+    </div>
+  </section>
   <!-- footer start -->
   <footer>
     <div class="container">
@@ -168,13 +169,13 @@
   <div id="copyright">
     <div class="container">
       <p class="copyright__text">
-        &copy; Copyright 2022 Mudassir Khan's Restaurant | All rights reserved 
-        
+        &copy; Copyright 2022 Mudassir Khan's Restaurant | All rights reserved
+
       </p>
     </div>
   </div>
- 
-  
+
+<script src= "script.js"></script>
 </body>
 
 </html>

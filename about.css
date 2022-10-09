@@ -1,0 +1,32 @@
+.ourstory__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+}
+.ourstory__title{
+  font-size:2rem;
+  font-weight:600;
+  margin-bottom: 2rem;
+}
+.ourstory__text p{
+  margin-bottom: 2rem;
+  
+}
+@media (min-width:768px){
+  .ourstory__wrapper{
+    flex-direction: row;
+  }
+  .ourstory__img{
+    flex: 2;
+    
+  }
+  .ourstory__img img{
+     object-fit: fill;
+  }
+  .ourstory__right{
+    flex: 2;
+  }
+   .ourstory__title{
+    font-size: 4rem;
+}
+}
